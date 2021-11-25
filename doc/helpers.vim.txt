@@ -1,0 +1,31 @@
+*helpers.vim.txt*
+                                                                 *helpers.vim*
+
+==============================================================================
+CONTENTS                                                *helpers.vim-contents*
+  1. Introduction..........................................|helpers.vim-intro|
+  2. Functions.........................................|helpers.vim-functions|
+
+==============================================================================
+INTRODUCTION                                               *helpers.vim-intro*
+
+Provides helper functions for other okkays plugins.
+
+
+==============================================================================
+FUNCTIONS                                              *helpers.vim-functions*
+
+helpers#GetContentArg({arg}, {is_visual})            *helpers#GetContentArg()*
+
+  Selects the given arg, visual selection, or word under the cursor.
+
+helpers#BuildQuickfixEntry({index}, {line})     *helpers#BuildQuickfixEntry()*
+
+  Builds a QuickFix list entry for a line item.
+
+helpers#BuildQuickfixList({lines})               *helpers#BuildQuickfixList()*
+  Builds a quickfix list out of a list of contents. Each line may contain:
+  filename:lnum extra descriptive text
+
+
+vim:tw=78:ts=8:ft=help:norl:
